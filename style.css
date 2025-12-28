@@ -1,0 +1,73 @@
+body {
+    background: #050505; /* Fundo quase preto */
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    border: 4px solid #333;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+#tetris {
+    border: 2px solid #555;
+    background-color: #000;
+}
+
+.sidebar {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 120px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #00f2fe;
+    text-shadow: 0 0 10px #00f2fe;
+}
+
+.info-box {
+    margin-top: 20px;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.info-box span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffff00;
+}
+
+#start-button {
+    margin-top: 30px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #00f2fe;
+    color: #00f2fe;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#start-button:hover {
+    background: #00f2fe;
+    color: #000;
+    box-shadow: 0 0 20px #00f2fe;
+}
