@@ -219,6 +219,20 @@ function drop() {
     requestAnimationFrame(drop);
 }
 
+function resizeGame() {
+    const canvas = document.getElementById('tetris');
+    const ratio = canvas.width / canvas.height;
+    const maxHeight = window.innerHeight * 0.6; // Ocupa no máximo 60% da altura da tela
+
+    if (window.innerHeight < 600) { // Se for um celular pequeno
+        canvas.style.height = maxHeight + "px";
+        canvas.style.width = (maxHeight * ratio) + "px";
+    }
+}
+
+window.addEventListener('resize', resizeGame);
+window.onload = resizeGame;
+
 startBtn.addEventListener('click', () => {
     if (audioCtx.state === 'suspended') audioCtx.resume();
     gameRunning = true;
